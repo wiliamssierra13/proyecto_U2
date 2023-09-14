@@ -1,0 +1,189 @@
+:root{
+    --primary: #1766af;
+    --primary-light: #8bb3d7;
+    --primary-dark: #0D4996;
+    --secundary: #5ADBB3;
+    --surface: #f9f9f9;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    background-color: var (--surface);
+    font-family: Roboto;
+    margin: 0;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+h1, h2, h3{
+text-align: center;
+}
+footer{
+    text-align: center;
+}
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-secundary{
+    background-color: var(--secundary);
+}
+.content{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.shadow{
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow: 0 .5rem 1.5rem 0 rgba(49,49,49, .48);
+
+}
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    
+}
+@media (min-width:480px){
+    .navegacion{
+        flex-direction: row;
+    }
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-transform: uppercase;
+
+}
+.navegacion a:hover{
+    background-color: var(--primary-dark);
+}
+.hero{
+    background-image: url("../img/niño.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+}
+
+.hero-content{
+    background-color: rgba(0,0,0,.60);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-content p{
+    font-size: 2.4rem;
+}
+.hero-content a{
+    background-color: var(--secundary);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: black    ;
+}
+.habilidades{
+    padding: 2rem;
+}
+.habilidades-content{
+    display: flex;
+    flex-direction: column;
+
+}
+@media(min-windth:768px){
+
+ .habilidades-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+ }
+}
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habilidades h3{
+    font-weight: normal;
+}
+.habilidades .icono{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proyectos{
+    background-color:  var(--primary);
+    color: white;
+    padding: 2rem;
+}
+.proyectos-content{
+    display: flex;
+    flex-direction: column;
+
+}
+@media(min-width:780px){
+    .proyectos-content{
+        /* display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem; */
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+.proyectos-content img{
+    max-height: 22rem;
+    border: 1rem solid white
+}
+.contactanoss{
+    padding: 2rem;
+}
+.formulario{
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.campo{
+    margin-bottom : 1rem;   
+}
+.campo label{
+    color: black;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text{
+    width: 100%;
+    border: 1px solid var(--primary-dark);
+    padding: 1.5rem;
+    border-radius: .5rem ;
+}
